@@ -1,14 +1,15 @@
 html, body{
     height: 100%;
+    width: 100%;
 }
 body{
     width: 100%;
     background-color: #DBDBDC;
     text-align: center;
-    font-family: "Arial";
+    font-family: 'Cardo', serif;
 }
 .parallax {
-    background-image: url("jonathan-nguyen-XwO0raJ2dQM-unsplash.jpg");
+    background-image: url("call-me-hangry-hoUmVcrsCVU-unsplash.jpg");
     height: 85%;
     object-fit: cover;
     background-attachment: fixed;
@@ -42,30 +43,13 @@ img {
     left: auto;
 }
 .slogan{
-    position: relative;
-    top: 42.5px;
-    left: auto;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     color: #DBDBDC;
-}
-footer{
-    background-color: #8C9E9B;
-    width: 100%;
-    height: 150px;
-}
-.icon{
-    position: relative;
-    top: 50px;
-    left: auto;
-    font-size: 35px;
-    color: #DBDBDC;
-}
-*{
-    box-sizing: border-box;
-}
-.column {
-    float: left;
-    width: 50%;
-    padding: 0 10px;
 }
 .row{
     margin: 0 -5px;
@@ -75,8 +59,24 @@ footer{
     display: table;
     clear: both;
 }
+.cardHolder{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.cardHolder2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
     padding: 16px;
     text-align: center;
     background-color: #FFFFFF;
@@ -88,4 +88,73 @@ footer{
         display: block;
         margin-bottom: 20px;
     }
+}
+form{
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+label, input{
+    display: inline-block;
+
+}
+label {
+    width: 30%;
+    text-align: right;
+}
+
+label + input{
+    width: 30%;
+    margin: 0 30% 0 4%;
+}
+input + input{
+    float: right;
+}
+.about{
+    padding-top: 20px;
+}
+.spaceBetween{
+    padding: 20px;
+}
+button{
+    display: block;
+    width: 15%;
+    margin: auto;
+
+    color: #FFFFFF;
+    background-color: #3B88FD;
+    border-color: #3B88FD;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+}
+.emptySpace{
+    padding: 20px;
+}
+.preFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    width: 100%;
+    height: 50px;
+    background-color: #c5c6c6;
+}
+footer{
+    background-color: #8C9E9B;
+    width: 100%;
+    height: 150px;
+}
+.facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facebook a{
+    position: relative;
+    top: 50px;
+    margin: 5px;
+    font-size: 35px;
+    color: #DBDBDC;
 }
